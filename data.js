@@ -53,7 +53,7 @@ const part2Data = [
     {
         id: 1,
         title: "Câu 1. Du lịch Việt Nam 2022",
-        text: "Năm 2022, đánh dấu sự trở lại của ngành du lịch sau đại dịch Covid-19...",
+        text: "\"Năm 2022, đánh dấu sự trở lại của ngành du lịch sau đại dịch Covid-19. Bên cạnh chính sách mở cửa hoàn toàn du lịch từ 15/3/2022, ngành du lịch đã triển khai mạnh mẽ chương trình kích cầu du lịch \"Người Việt Nam đi du lịch Việt Nam\", \"Du lịch Việt Nam - Trải nghiệm trọn vẹn\". Nhờ đó, thị trường du lịch nội địa đã phục hồi mạnh mẽ. Số lượng khách du lịch nội địa đạt 101,3 triệu lượt, vượt xa mục tiêu 60 triệu lượt đặt ra từ đầu năm và cao hơn mức 85 triệu lượt của năm 2019 (năm chưa xảy ra đại dịch). Tổng thu từ khách du lịch ước đạt 495 nghìn tỉ đồng.\"",
         items: [
             { id: 'a', text: "a) Tổng lượt khách và doanh thu du lịch tăng lên chủ yếu là do chính sách đổi mới, sản phẩm du lịch ngày càng chất lượng và hấp dẫn.", ans: false },
             { id: 'b', text: "b) Trước năm 2022, du lịch Việt Nam gặp nhiều khó khăn do ảnh hưởng của đại dịch Covid-19.", ans: true },
@@ -64,7 +64,7 @@ const part2Data = [
     {
         id: 2,
         title: "Câu 2. Vùng Trung du và miền núi Bắc Bộ",
-        text: "Vùng Trung du và miền núi Bắc Bộ có khí hậu nhiệt đới ẩm gió mùa, có một mùa đông lạnh và phân hoá rõ rệt theo độ cao...",
+        text: "Vùng Trung du và miền núi Bắc Bộ có khí hậu nhiệt đới ẩm gió mùa, có một mùa đông lạnh và phân hoá rõ rệt theo độ cao. Địa hình cao, cắt xẻ mạnh, khí hậu mát mẻ, nhiều đồng cỏ, thích hợp cho chăn nuôi gia súc lớn, trồng cây công nghiệp, cây dược liệu, rau quả cận nhiệt và ôn đới.",
         items: [
             { id: 'a', text: "a) Vùng Trung du và miền núi phía Bắc có một mùa đông lạnh nhất nước ta.", ans: true },
             { id: 'b', text: "b) Mỗi năm vùng Trung du và miền núi phía Bắc có hai mùa gió chính là gió mùa Đông Bắc và gió Tây Nam.", ans: false },
@@ -75,7 +75,14 @@ const part2Data = [
     {
         id: 3,
         title: "Câu 3. Sản lượng chè búp tươi",
-        text: "Dựa vào bảng số liệu: Sản lượng chè búp tươi phân theo địa phương giai đoạn 2018 – 2021...",
+        text: `Cho bảng số liệu: Sản lượng chè búp tươi phân theo địa phương giai đoạn 2018 – 2021 (Đơn vị: Nghìn tấn)
+        <table border='1' style='width:100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px;'>
+          <tr style='background-color: #f0f0f0;'><th>Địa phương</th><th>2018</th><th>2019</th><th>2020</th><th>2021</th></tr>
+          <tr><td>Hà Giang</td><td style='text-align: center;'>71,8</td><td style='text-align: center;'>70,1</td><td style='text-align: center;'>87,4</td><td style='text-align: center;'>91,7</td></tr>
+          <tr><td>Tuyên Quang</td><td style='text-align: center;'>64,2</td><td style='text-align: center;'>65,5</td><td style='text-align: center;'>67,5</td><td style='text-align: center;'>68,3</td></tr>
+          <tr><td>Thái Nguyên</td><td style='text-align: center;'>224,6</td><td style='text-align: center;'>239,2</td><td style='text-align: center;'>244,4</td><td style='text-align: center;'>250,7</td></tr>
+          <tr><td>Lâm Đồng</td><td style='text-align: center;'>141,4</td><td style='text-align: center;'>144,2</td><td style='text-align: center;'>148,5</td><td style='text-align: center;'>151,1</td></tr>
+        </table>`,
         items: [
             { id: 'a', text: "a) Sản lượng chè búp tươi của các tỉnh đều có xu hướng tăng.", ans: true },
             { id: 'b', text: "b) Tỉnh Tuyên Quang có sản lượng chè tăng ít hơn Thái Nguyên.", ans: true },
@@ -86,7 +93,13 @@ const part2Data = [
     {
         id: 4,
         title: "Câu 4. Số lượng trâu phân theo địa phương",
-        text: "Dựa vào bảng số liệu: Số lượng trâu phân theo địa phương giai đoạn 2018 – 2021...",
+        text: `Cho bảng số liệu: Số lượng trâu phân theo địa phương giai đoạn 2018 – 2021 (Đơn vị: Nghìn con)
+        <table border='1' style='width:100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px;'>
+          <tr style='background-color: #f0f0f0;'><th>Năm</th><th>2018</th><th>2019</th><th>2020</th><th>2021</th></tr>
+          <tr><td>Cả nước</td><td style='text-align: center;'>2 425.1</td><td style='text-align: center;'>2 388.5</td><td style='text-align: center;'>2 332.8</td><td style='text-align: center;'>2 278.3</td></tr>
+          <tr><td>TD&MN Bắc Bộ</td><td style='text-align: center;'>1 391.2</td><td style='text-align: center;'>1 332.4</td><td style='text-align: center;'>1 293.9</td><td style='text-align: center;'>1 245.3</td></tr>
+          <tr><td>Đồng bằng sông Hồng</td><td style='text-align: center;'>150.2</td><td style='text-align: center;'>145.5</td><td style='text-align: center;'>139.6</td><td style='text-align: center;'>133.9</td></tr>
+        </table>`,
         items: [
             { id: 'a', text: "a) Đàn trâu của vùng Trung du và miền núi phía Bắc chiếm tỉ trọng lớn nhất cả nước.", ans: true },
             { id: 'b', text: "b) Giai đoạn 2018 - 2021, tỉ trọng đàn trâu vùng Trung du và miền núi phía Bắc giảm nhẹ.", ans: true },
@@ -97,7 +110,7 @@ const part2Data = [
     {
         id: 5,
         title: "Câu 5. Phát triển chăn nuôi",
-        text: "\"Theo các chuyên gia, để ngành chăn nuôi phát triển ổn định, tới đây các địa phương cần tích cực triển khai Luật Chăn nuôi...\"",
+        text: "\"Theo các chuyên gia, để ngành chăn nuôi phát triển ổn định, tới đây các địa phương cần tích cực triển khai Luật Chăn nuôi, Chiến lược phát triển chăn nuôi; tập trung phát triển chăn nuôi theo hướng công nghiệp, ứng dụng công nghệ cao, tuần hoàn; chuyển đổi số, chế biến sâu, đa dạng hóa sản phẩm; phối hợp với các doanh nghiệp để mở rộng thị trường xuất khẩu.\"",
         items: [
             { id: 'a', text: "a) Chăn nuôi theo hướng hàng hoá góp phần nâng cao hiệu quả sản xuất.", ans: true },
             { id: 'b', text: "b) Sản phẩm của ngành chăn nuôi chủ yếu phục vụ xuất khẩu.", ans: false },
@@ -108,7 +121,13 @@ const part2Data = [
     {
         id: 6,
         title: "Câu 6. Diện tích trồng cây công nghiệp",
-        text: "Dựa vào bảng số liệu: Diện tích trồng cây công nghiệp của nước ta giai đoạn 2010 – 2021...",
+        text: `Cho bảng số liệu: Diện tích trồng cây công nghiệp của nước ta giai đoạn 2010 – 2021 (Đơn vị: Nghìn ha)
+        <table border='1' style='width:100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px;'>
+          <tr style='background-color: #f0f0f0;'><th>Năm</th><th>2010</th><th>2015</th><th>2019</th><th>2021</th></tr>
+          <tr><td>Tổng số</td><td style='text-align: center;'>2 808,1</td><td style='text-align: center;'>2 822,7</td><td style='text-align: center;'>2 739,7</td><td style='text-align: center;'>2 705,1</td></tr>
+          <tr><td>Cây hàng năm</td><td style='text-align: center;'>797,6</td><td style='text-align: center;'>676,6</td><td style='text-align: center;'>535,0</td><td style='text-align: center;'>504,9</td></tr>
+          <tr><td>Cây lâu năm</td><td style='text-align: center;'>2 010,5</td><td style='text-align: center;'>2 146,1</td><td style='text-align: center;'>2 204,7</td><td style='text-align: center;'>2 200,2</td></tr>
+        </table>`,
         items: [
             { id: 'a', text: "a) Diện tích cây công nghiệp lâu năm có xu hướng giảm.", ans: false },
             { id: 'b', text: "b) Tỉ trọng diện tích cây công nghiệp lâu năm ngày càng tăng.", ans: true },
@@ -117,9 +136,15 @@ const part2Data = [
         ]
     },
     {
-        id: 7, // Originally 2nd "Câu 4"
-        title: "Câu 4 (Kép). Giá trị sản xuất nông-lâm-thuỷ sản",
-        text: "Dựa vào bảng số liệu: Giá trị sản xuất ngành nông nghiệp, lâm nghiệp và thuỷ sản...",
+        id: 7,
+        title: "Câu 7. Giá trị sản xuất nông-lâm-thuỷ sản",
+        text: `Cho bảng số liệu: Giá trị sản xuất ngành nông nghiệp, lâm nghiệp và thuỷ sản (theo giá thực tế) (Đơn vị: Tỉ đồng)
+        <table border='1' style='width:100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px;'>
+          <tr style='background-color: #f0f0f0;'><th>Năm</th><th>2010</th><th>2015</th><th>2021</th></tr>
+          <tr><td>Nông nghiệp</td><td style='text-align: center;'>414 472</td><td style='text-align: center;'>647 167</td><td style='text-align: center;'>1 049 469</td></tr>
+          <tr><td>Lâm nghiệp</td><td style='text-align: center;'>16 480</td><td style='text-align: center;'>26 430</td><td style='text-align: center;'>61 694</td></tr>
+          <tr><td>Thủy sản</td><td style='text-align: center;'>111 639</td><td style='text-align: center;'>208 610</td><td style='text-align: center;'>393 847</td></tr>
+        </table>`,
         items: [
             { id: 'a', text: "a) Năm 2021 so với năm 2010, ngành lâm nghiệp tăng chậm nhất.", ans: true },
             { id: 'b', text: "b) Năm 2021 so với năm 2010, ngành thuỷ sản tăng nhanh nhất.", ans: true },
@@ -128,9 +153,9 @@ const part2Data = [
         ]
     },
     {
-        id: 8, // Originally "Câu 7"
-        title: "Câu 7. Ngành điện",
-        text: "\"Trong những năm qua, ngành điện cũng không ngừng đổi mới, tiếp cận khoa học kĩ thuật...\"",
+        id: 8,
+        title: "Câu 8. Ngành điện",
+        text: "\"Trong những năm qua, ngành điện cũng không ngừng đổi mới, tiếp cận khoa học kĩ thuật, công nghệ tiên tiến của thế giới để phục vụ sản xuất và đời sống. Ngành điện đã đóng góp quan trọng vào sự nghiệp công nghiệp hoá, hiện đại hoá đất nước, đảm bảo an ninh năng lượng quốc gia.\"",
         items: [
             { id: 'a', text: "a) Công nghiệp sản xuất điện ngày càng được hiện đại hoá.", ans: true },
             { id: 'b', text: "b) Mạng lưới điện quốc gia đã được hình thành.", ans: true },
@@ -139,9 +164,9 @@ const part2Data = [
         ]
     },
     {
-        id: 9, // Originally "Câu 8"
-        title: "Câu 8. Nguồn sản xuất điện",
-        text: "\"Nguồn sản xuất điện ngày càng phụ thuộc hơn vào các nguồn nhiên liệu hóa thạch...\"",
+        id: 9,
+        title: "Câu 9. Nguồn sản xuất điện",
+        text: "\"Nguồn sản xuất điện ngày càng phụ thuộc hơn vào các nguồn nhiên liệu hóa thạch, trong khi nguồn thủy năng đã được khai thác gần như tối đa. Việc phát triển các nguồn năng lượng tái tạo (điện gió, điện mặt trời) đang được đẩy mạnh nhằm đảm bảo cung ứng điện và bảo vệ môi trường.\"",
         items: [
             { id: 'a', text: "a) Nguồn sản xuất điện của nước ta hiện nay chủ yếu dựa vào than, dầu khí và thuỷ năng.", ans: true },
             { id: 'b', text: "b) Tiềm năng thuỷ điện nước ta là vô tận, tiềm năng khai thác còn rất lớn.", ans: false },
@@ -150,9 +175,15 @@ const part2Data = [
         ]
     },
     {
-        id: 10, // Originally "Câu 9"
-        title: "Câu 9. Dầu thô và khí tự nhiên",
-        text: "Dựa vào bảng số liệu: Sản lượng khai thác dầu thô và khí tự nhiên giai đoạn 2010 – 2021...",
+        id: 10,
+        title: "Câu 10. Dầu thô và khí tự nhiên",
+        text: `Cho bảng số liệu: Sản lượng khai thác dầu thô và khí tự nhiên giai đoạn 2010 – 2021
+        <table border='1' style='width:100%; border-collapse: collapse; margin-top: 10px; margin-bottom: 10px;'>
+          <tr style='background-color: #f0f0f0;'><th>Năm</th><th>2010</th><th>2015</th><th>2018</th><th>2021</th></tr>
+          <tr><td>Dầu thô (triệu tấn)</td><td style='text-align: center;'>15,0</td><td style='text-align: center;'>16,9</td><td style='text-align: center;'>12,0</td><td style='text-align: center;'>9,1</td></tr>
+          <tr><td>Khí tự nhiên (tỉ m³)</td><td style='text-align: center;'>9,4</td><td style='text-align: center;'>10,7</td><td style='text-align: center;'>10,0</td><td style='text-align: center;'>7,4</td></tr>
+        </table>
+        (Nguồn: Niên giám thống kê Việt Nam)`,
         items: [
             { id: 'a', text: "a) Năm 2021 so với năm 2010, khí tự nhiên giảm nhanh hơn dầu thô.", ans: false },
             { id: 'b', text: "b) Dầu thô được khai thác chủ yếu ở trong nước.", ans: true }
